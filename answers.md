@@ -18,6 +18,7 @@
 
 # 2. Extend the system by adding: 
 # a. A StudentAccount class with no fees and a maximum balance of $5,000 
+```bash
 // Student Account
 class StudentAccount extends BankAccount {
   static const double maxBalance = 5000;
@@ -46,6 +47,7 @@ class StudentAccount extends BankAccount {
   }
 }
 # b. A method to calculate and apply monthly interest to all interest-bearing accounts 
+```bash
 @override
   double calculateInterest() => balance * interestRate;
 
@@ -56,6 +58,7 @@ class StudentAccount extends BankAccount {
     addTransaction("Interest applied: \$${interest.toStringAsFixed(2)}");
   }
 # c. Transaction history tracking for each account
+```bash
 List<String> _transactionHistory = [];
 
   void addTransaction(String details) {
