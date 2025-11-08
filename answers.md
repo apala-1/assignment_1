@@ -46,6 +46,7 @@ class StudentAccount extends BankAccount {
     addTransaction("Deposited: \$${amount.toStringAsFixed(2)}");
   }
 }
+```
 # b. A method to calculate and apply monthly interest to all interest-bearing accounts 
 ```bash
 @override
@@ -57,6 +58,7 @@ class StudentAccount extends BankAccount {
     balance = balance + interest;
     addTransaction("Interest applied: \$${interest.toStringAsFixed(2)}");
   }
+  ```
 # c. Transaction history tracking for each account
 ```bash
 List<String> _transactionHistory = [];
@@ -64,7 +66,7 @@ List<String> _transactionHistory = [];
   void addTransaction(String details) {
     _transactionHistory.add(details);
   }
-
+```
 # 3. Refactor suggestion: How would you improve the error handling and validation in this system?
 -> I would raise Exceptions like InsufficientBalanceException so user can understand the problem better. 
 -> Would also add try catch.
