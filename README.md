@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Assignment 1 for Mobile Application Development Class
+
+This file contains a text file that has the answers to the questions separately along with the youtube video link. The code is in /lib folder.
